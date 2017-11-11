@@ -15,7 +15,13 @@ import './helloWorld.less';
 class HelloWorld extends React.Component {
     render() {
         const {demo, actions} = this.props;
-        return <h1 onClick={actions.getHaha}>{demo.test}<a href="javascript:void(0)" onClick={(e)=>{e.stopPropagation();actions.getHehe();}}>click</a></h1>
+        return <div>
+            <h1 onClick={actions.getHaha}>{demo.test}<a href="javascript:void(0)" onClick={(e) => {
+                e.stopPropagation();
+                actions.getHehe();
+            }}>click</a></h1>
+            <div className="avatar"></div>
+        </div>
     }
 }
 
