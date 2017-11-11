@@ -1,7 +1,6 @@
 /**
  * Created by Administrator on 2017/11/9.
  */
-import React from 'react';
 import {bindActionCreators} from 'redux';
 import {connect} from 'react-redux';
 import * as DemoAcitonCreator from '../../../actions/demo';

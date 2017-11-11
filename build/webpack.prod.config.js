@@ -29,7 +29,9 @@ module.exports = merge(baseWebpackConfig, {
             sourceMap: true
         }),
         new webpack.ProvidePlugin({
-            "_": "lodash"
+            "_": "lodash",
+            "React":"react",
+            "ReactDOM":"react-dom"
         }),
         new HtmlWebpackPlugin({
             filename: 'index.html',

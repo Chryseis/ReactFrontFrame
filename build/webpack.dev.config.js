@@ -20,12 +20,17 @@ module.exports = merge(baseWebpackConfig, {
         port: 8088,
         contentBase: path.resolve(__dirname, '../'),
         compress: true,
-        historyApiFallback: true
+        historyApiFallback: true,
+        setup(app){
+            //todo api
+        }
     },
     plugins: [
         new webpack.HotModuleReplacementPlugin(),
         new webpack.ProvidePlugin({
-            "_": "lodash"
+            "_": "lodash",
+            "React":"react",
+            "ReactDOM":"react-dom"
         })
     ]
 })
