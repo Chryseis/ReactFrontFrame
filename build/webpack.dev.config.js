@@ -1,15 +1,15 @@
 /**
  * Created by Administrator on 2017/11/12.
  */
-const path=require('path');
+const path = require('path');
 const merge = require('webpack-merge');
 const webpack = require('webpack');
 const baseWebpackConfig = require('./webpack.base.config');
 
 
-module.exports=merge(baseWebpackConfig,{
+module.exports = merge(baseWebpackConfig, {
     output: {
-        path: path.resolve(__dirname, '../dist'),
+        path: path.resolve(__dirname, 'dist'),
         publicPath: '/assets/',
         filename: '[name].js',
         sourceMapFilename: '[file].map'
@@ -18,7 +18,7 @@ module.exports=merge(baseWebpackConfig,{
     devServer: {
         host: '127.0.0.1',
         port: 8088,
-        contentBase: path.resolve(__dirname,'../'),
+        contentBase: path.resolve(__dirname, '../'),
         compress: true,
         historyApiFallback: true
     },
