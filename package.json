@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --config build/webpack.dev.config --open",
-    "build":"cross-env NODE_ENV=production webpack --config build/webpack.prod.config"
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.prod.config"
   },
   "keywords": [
     "react",
@@ -46,6 +46,7 @@
   },
   "dependencies": {
     "lodash": "^4.17.4",
+    "moment": "^2.19.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-redux": "^5.0.6",

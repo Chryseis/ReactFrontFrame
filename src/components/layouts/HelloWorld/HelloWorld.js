@@ -17,7 +17,7 @@ class HelloWorld extends React.Component {
         return <div>
             <h1 onClick={actions.getHaha}>{demo.test}<a href="javascript:void(0)" onClick={(e) => {
                 e.stopPropagation();
-                actions.getHehe();
+                actions.fetchHeHe();
             }}>click</a></h1>
             <div className="avatar"></div>
         </div>

@@ -20,3 +20,10 @@ export function getHehe() {
         })
     }
 }
+
+export function fetchHeHe() {
+    return {
+        type: Action.FETCH_HEHE,
+        word: 'hehe'
+    }
+}

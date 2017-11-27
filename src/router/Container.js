@@ -3,10 +3,8 @@
  */
 import {BrowserRouter as Router, Route, Switch, Redirect} from 'react-router-dom';
 import {Provider} from 'react-redux';
-import configureStore from '../store/configureStore';
+import store from '../store/configureStore';
 import HelloWorld from '../components/layouts/HelloWorld';
-
-const store = configureStore();
 
 class Container extends React.Component {
     constructor(props) {

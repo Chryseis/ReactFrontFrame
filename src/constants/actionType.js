@@ -3,7 +3,8 @@
  */
 const demo={
     GET_HAHA:'GET_HAHA',
-    GET_HEHE:'GET_HEHE'
+    GET_HEHE:'GET_HEHE',
+    FETCH_HEHE:'FETCH_HEHE'
 }
 
 export {
